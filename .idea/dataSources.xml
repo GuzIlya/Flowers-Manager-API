@@ -7,17 +7,11 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/flowers_manager_db</jdbc-url>
     </data-source>
-    <data-source source="LOCAL" name="del4i07cef16ae@ec2-46-137-177-160.eu-west-1.compute.amazonaws.com" uuid="929b2da3-47ea-4b22-8d35-8d26943be715">
+    <data-source source="LOCAL" name="d842t92quh5i02@ec2-54-247-70-127.eu-west-1.compute.amazonaws.com" uuid="1b40f4b8-dd77-4131-a16d-5bfaa8141c21">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://ec2-46-137-177-160.eu-west-1.compute.amazonaws.com:5432/del4i07cef16ae?sslmode=require</jdbc-url>
-    </data-source>
-    <data-source source="LOCAL" name="Flowers-Manager-api-2" uuid="ac31f7db-75c7-459b-b419-d71511761d57">
-      <driver-ref>postgresql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://ec2-46-137-177-160.eu-west-1.compute.amazonaws.com:5432/dc4vga13hk47pm?sslmode=require</jdbc-url>
+      <jdbc-url>jdbc:postgresql://ec2-54-247-70-127.eu-west-1.compute.amazonaws.com:5432/d842t92quh5i02?sslmode=require</jdbc-url>
     </data-source>
   </component>
 </project>
