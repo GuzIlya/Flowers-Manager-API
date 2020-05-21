@@ -7,7 +7,7 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/flowers_manager_db</jdbc-url>
     </data-source>
-    <data-source source="LOCAL" name="d842t92quh5i02@ec2-54-247-70-127.eu-west-1.compute.amazonaws.com" uuid="1b40f4b8-dd77-4131-a16d-5bfaa8141c21">
+    <data-source source="LOCAL" name="Flowers-Manager-API" uuid="1b40f4b8-dd77-4131-a16d-5bfaa8141c21">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>

@@ -14,7 +14,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 public class SwaggerConfig {
 
-
     @Bean
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
@@ -22,7 +21,7 @@ public class SwaggerConfig {
                 .apis(RequestHandlerSelectors.basePackage("net.guz.flowersmanagerapi"))
                 .paths(PathSelectors.any())
                 .build()
-                .host("flowers-manager-api.herokuapp.com")
+                .host("https://flowers-manager-api.herokuapp.com/")
                 .apiInfo(metaInfo());
     }
 
