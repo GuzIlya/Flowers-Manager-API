@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="293d2f7c-83a5-41b1-8726-3cff67922a66" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/FlowersManagerApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/FlowersManagerApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/guz/flowersmanagerapi/FlowersManagerApiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/guz/flowersmanagerapi/FlowersManagerApiApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/guz/flowersmanagerapi/config/SwaggerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/guz/flowersmanagerapi/config/SwaggerConfig.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -82,17 +86,17 @@
           <entry key="java" value="519" />
           <entry key="properties" value="19" />
           <entry key="sql" value="65" />
-          <entry key="txt" value="77" />
-          <entry key="xml" value="8" />
+          <entry key="txt" value="89" />
+          <entry key="xml" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="519" />
-          <entry key="PLAIN_TEXT" value="77" />
+          <entry key="PLAIN_TEXT" value="89" />
           <entry key="Properties" value="19" />
           <entry key="Scratch" value="85" />
-          <entry key="XML" value="8" />
+          <entry key="XML" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -157,8 +161,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="572">
+              <caret line="86" column="21" lean-forward="true" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -254,6 +258,7 @@
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/controller/terminal/OrderController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/config/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/app/FlowersManagerApiApplication.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/FlowersManagerApiApplication.java" />
       </list>
@@ -324,61 +329,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="flowersmanagerapi" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowers-manager-api-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowers-manager-api-2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="flowersmanagerapi" type="462c0819:PsiDirectoryNode" />
-              <item name="terminal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowers-manager-api-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowers-manager-api-2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="flowersmanagerapi" type="462c0819:PsiDirectoryNode" />
-              <item name="terminal" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowers-manager-api-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowers-manager-api-2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="flowersmanagerapi" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowers-manager-api-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowers-manager-api-2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="flowersmanagerapi" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowers-manager-api-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowers-manager-api-2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="flowersmanagerapi" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowers-manager-api-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowers-manager-api-2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="flowersmanagerapi" type="462c0819:PsiDirectoryNode" />
               <item name="awt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -428,7 +378,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590089615191" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590091778638" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -495,7 +445,7 @@
       <updated>1583665375050</updated>
       <workItem from="1583665379546" duration="6340000" />
       <workItem from="1589542546359" duration="1827000" />
-      <workItem from="1590080428801" duration="7538000" />
+      <workItem from="1590080428801" duration="9530000" />
     </task>
     <task id="LOCAL-00001" summary="added order entity">
       <created>1590084526774</created>
@@ -525,11 +475,18 @@
       <option name="project" value="LOCAL" />
       <updated>1590088980104</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fixing error">
+      <created>1590089645082</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590089645082</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15705000" />
+    <option name="totallyTimeSpent" value="17697000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -545,7 +502,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3177305" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -581,7 +538,8 @@
     <MESSAGE value="added order entity" />
     <MESSAGE value="changed credentials" />
     <MESSAGE value="changed packaging" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed packaging" />
+    <MESSAGE value="fixing error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing error" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/dto/TerminalTokenDto.java">
@@ -875,13 +833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/config/MainConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -907,6 +858,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="86" column="21" lean-forward="true" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
         </state>
       </provider>
     </entry>
