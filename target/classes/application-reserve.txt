@@ -1,0 +1,17 @@
+server.port=8080
+
+spring.datasource.url=jdbc:postgresql://ec2-54-246-90-10.eu-west-1.compute.amazonaws.com:5432/d9prctgev786kc?sslmode=require&serverTimezone=UTC
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.datasource.username=sjsembgjitwlqr
+spring.datasource.password=34f29efbe15be638e5065dfd4a6f974a6009b2a5509a0a9ee9d61f7078f93950
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+
+
+spring.flyway.enabled=false
+
+spring.jpa.hibernate.ddl-auto=update
+
+jwt.token.terminal.secret=flowersmanagerapi
+jwt.token.terminal.expired=86400000
+jwt.token.terminal.headername=AuthTerm
+
