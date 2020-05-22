@@ -3,12 +3,12 @@ package net.guz.flowersmanagerapi.service.impl;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import net.guz.flowersmanagerapi.dto.OrderDto;
+import net.guz.flowersmanagerapi.dto.SearchDto;
+import net.guz.flowersmanagerapi.dto.SortDto;
 import net.guz.flowersmanagerapi.entity.Florist;
 import net.guz.flowersmanagerapi.entity.Order;
 import net.guz.flowersmanagerapi.entity.Terminal;
-import net.guz.flowersmanagerapi.repository.FloristRepository;
-import net.guz.flowersmanagerapi.repository.OrderRepository;
-import net.guz.flowersmanagerapi.repository.TerminalRepository;
+import net.guz.flowersmanagerapi.repository.*;
 import net.guz.flowersmanagerapi.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,6 +29,12 @@ public class OrderServiceImpl implements OrderService {
 
     @Autowired
     private TerminalRepository terminalRepository;
+
+    @Autowired
+    private SearchRepository searchRepository;
+
+    @Autowired
+    private SortRepository sortRepository;
 
     @Override
     public List<Order> getOrdersByFloristAndTerminal(Jws<Claims> claims) {
@@ -120,5 +126,15 @@ public class OrderServiceImpl implements OrderService {
         Collections.sort(orders, Comparator.comparing(Order::getId));
 
         return OrderDto.from(orders);
+    }
+
+    @Override
+    public List<SortDto> getSorts() {
+        return SortDto.from(sortRepository.findAll());
+    }
+
+    @Override
+    public List<SearchDto> getSearches() {
+        return SearchDto.from(searchRepository.findAll());
     }
 }

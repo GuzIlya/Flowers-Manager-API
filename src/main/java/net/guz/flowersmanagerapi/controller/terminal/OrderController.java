@@ -4,6 +4,8 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.swagger.annotations.Api;
 import net.guz.flowersmanagerapi.dto.OrderDto;
+import net.guz.flowersmanagerapi.dto.SearchDto;
+import net.guz.flowersmanagerapi.dto.SortDto;
 import net.guz.flowersmanagerapi.entity.Order;
 import net.guz.flowersmanagerapi.security.awt.exception.JwtValidationException;
 import net.guz.flowersmanagerapi.service.AuthTerminalService;
@@ -117,6 +119,15 @@ public class OrderController {
         return ResponseEntity.ok(OrderDto.from(orders));
     }
 
+    @GetMapping("/getSorts")
+    public ResponseEntity<List<SortDto>> getSorts(){
+         return ResponseEntity.ok(orderService.getSorts());
+    }
+
+    @GetMapping("/getSearches")
+    public ResponseEntity<List<SearchDto>> getSearches(){
+        return ResponseEntity.ok(orderService.getSearches());
+    }
 
 
 }
