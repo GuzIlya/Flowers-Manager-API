@@ -16,4 +16,5 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
     List<Order> findAllByFloristAndTerminalAndAddress(Florist florist, Terminal terminal, String address);
     List<Order> findAllByFloristAndTerminalAndPrice(Florist florist, Terminal terminal, String price);
     Optional<Order> findOneByFloristAndTerminalAndId(Florist florist, Terminal terminal, Long id);
+    Optional<Order> findAllByFloristAndTerminalAndId(Florist florist, Terminal terminal, Long id);
 }

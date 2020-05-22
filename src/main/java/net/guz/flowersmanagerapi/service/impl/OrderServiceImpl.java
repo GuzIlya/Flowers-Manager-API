@@ -13,10 +13,7 @@ import net.guz.flowersmanagerapi.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @Service
 public class OrderServiceImpl implements OrderService {
@@ -57,14 +54,14 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public OrderDto getOrderById(Jws<Claims> claims, Long id) {
+    public List<OrderDto> getOrderById(Jws<Claims> claims, Long id) {
         Optional<Florist> floristCandidate = floristRepository.findById(Long.parseLong(claims.getBody().get("florist_id").toString()));
         Optional<Terminal> terminalCandidate = terminalRepository.findById(Long.parseLong(claims.getBody().get("terminal_id").toString()));
 
         Optional<Order> order = orderRepository.findOneByFloristAndTerminalAndId(floristCandidate.get(), terminalCandidate.get(), id);
 
         if(order.isPresent())
-            return OrderDto.from(order.get());
+            return OrderDto.from(Arrays.asList(order.get()));
         else throw new IllegalArgumentException("No such order");
     }
 

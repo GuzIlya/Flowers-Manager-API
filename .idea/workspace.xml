@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="293d2f7c-83a5-41b1-8726-3cff67922a66" name="Default Changelist" comment="added sort and searches tables">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1b40f4b8-dd77-4131-a16d-5bfaa8141c21.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1b40f4b8-dd77-4131-a16d-5bfaa8141c21.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1b40f4b8-dd77-4131-a16d-5bfaa8141c21/storage_v2/_src_/database/d842t92quh5i02.v8ilMQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1b40f4b8-dd77-4131-a16d-5bfaa8141c21/storage_v2/_src_/database/d842t92quh5i02.v8ilMQ/schema/public.abK9xQ.meta" afterDir="false" />
+    <list default="true" id="293d2f7c-83a5-41b1-8726-3cff67922a66" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/controller/terminal/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/controller/terminal/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/guz/flowersmanagerapi/controller/terminal/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/guz/flowersmanagerapi/controller/terminal/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/guz/flowersmanagerapi/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/guz/flowersmanagerapi/service/OrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/guz/flowersmanagerapi/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/guz/flowersmanagerapi/service/impl/OrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/repository/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/impl/OrderServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -85,17 +82,17 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cell" value="601" />
-          <entry key="java" value="2074" />
+          <entry key="java" value="2134" />
           <entry key="properties" value="19" />
           <entry key="sql" value="65" />
-          <entry key="txt" value="190" />
+          <entry key="txt" value="222" />
           <entry key="xml" value="65" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2074" />
-          <entry key="PLAIN_TEXT" value="190" />
+          <entry key="JAVA" value="2134" />
+          <entry key="PLAIN_TEXT" value="222" />
           <entry key="Properties" value="19" />
           <entry key="Scratch" value="666" />
           <entry key="XML" value="65" />
@@ -107,7 +104,7 @@
           <entry key="class" value="4" />
           <entry key="florists" value="9" />
           <entry key="florists_id_seq" value="1" />
-          <entry key="java" value="117" />
+          <entry key="java" value="121" />
           <entry key="orders" value="6" />
           <entry key="products" value="2" />
           <entry key="properties" value="6" />
@@ -124,7 +121,7 @@
         <counts>
           <entry key="CLASS" value="4" />
           <entry key="Database Element" value="33" />
-          <entry key="JAVA" value="117" />
+          <entry key="JAVA" value="121" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="6" />
           <entry key="SQL" value="1" />
@@ -137,29 +134,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://1b40f4b8-dd77-4131-a16d-5bfaa8141c21/database/d842t92quh5i02/schema/public/table/searches">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://1b40f4b8-dd77-4131-a16d-5bfaa8141c21/database/d842t92quh5i02/schema/public/table/sorts">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Category.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/impl/OrderServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            <state relative-caret-position="156">
+              <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#getOrdersByFloristAndTerminal#0;class#OrderServiceImpl#0" />
+                <element signature="method#getOrdersByFloristAndTerminalByIdAsc#0;class#OrderServiceImpl#0" />
+                <element signature="method#getOrderById#0;class#OrderServiceImpl#0" />
+                <element signature="method#getOrdersByTime#0;class#OrderServiceImpl#0" />
+                <element signature="method#getOrdersByCustomer#0;class#OrderServiceImpl#0" />
+                <element signature="method#getOrdersByAddress#0;class#OrderServiceImpl#0" />
+                <element signature="method#getOrdersByPrice#0;class#OrderServiceImpl#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/AuthTerminalService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/OrderService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/repository/OrderRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -185,11 +204,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/controller/terminal/OrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="75" column="74" selection-start-line="75" selection-start-column="74" selection-end-line="75" selection-end-column="74" />
+            <state relative-caret-position="204">
+              <caret line="47" column="52" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#sortByPriceAsc#0;class#OrderController#0" />
@@ -271,7 +290,6 @@
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Terminal.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Order.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/dto/OrderDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/repository/OrderRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Product.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Category.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Searches.java" />
@@ -280,9 +298,10 @@
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/repository/SortRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/dto/SearchDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/dto/SortDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/controller/terminal/OrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/repository/OrderRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/OrderService.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/impl/OrderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/controller/terminal/OrderController.java" />
       </list>
     </option>
   </component>
@@ -455,7 +474,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590175376802" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590176075611" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -523,7 +542,7 @@
       <workItem from="1583665379546" duration="6340000" />
       <workItem from="1589542546359" duration="1827000" />
       <workItem from="1590080428801" duration="13651000" />
-      <workItem from="1590152885221" duration="12327000" />
+      <workItem from="1590152885221" duration="12903000" />
     </task>
     <task id="LOCAL-00001" summary="added order entity">
       <created>1590084526774</created>
@@ -609,11 +628,18 @@
       <option name="project" value="LOCAL" />
       <updated>1590163656819</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="changed request parameter name">
+      <created>1590175417405</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1590175417406</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34145000" />
+    <option name="totallyTimeSpent" value="34721000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -669,7 +695,8 @@
     <MESSAGE value="added mainclass" />
     <MESSAGE value="added searching and sorting of orders" />
     <MESSAGE value="added sort and searches tables" />
-    <option name="LAST_COMMIT_MESSAGE" value="added sort and searches tables" />
+    <MESSAGE value="changed request parameter name" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed request parameter name" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -691,13 +718,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/cotroller/terminal/auth/controller/terminal/OrderController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/AuthTerminalService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/jsonwebtoken/jjwt/0.9.1/jjwt-0.9.1.jar!/io/jsonwebtoken/Jws.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -892,16 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/repository/OrderRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="52" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Shop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -953,36 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" selection-start-line="5" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/impl/OrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getOrdersByFloristAndTerminal#0;class#OrderServiceImpl#0" />
-            <element signature="method#getOrdersByDate#0;class#OrderServiceImpl#0" />
-            <element signature="method#getOrdersByTime#0;class#OrderServiceImpl#0" />
-            <element signature="method#getOrdersByCustomer#0;class#OrderServiceImpl#0" />
-            <element signature="method#getOrdersByAddress#0;class#OrderServiceImpl#0" />
-            <element signature="method#getOrdersByPrice#0;class#OrderServiceImpl#0" />
-            <element signature="e#6044#6045#0" expanded="true" />
-            <element signature="e#6071#6072#0" expanded="true" />
-            <element signature="e#6129#6130#0" expanded="true" />
-            <element signature="e#6156#6157#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1066,8 +1046,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/controller/terminal/OrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="75" column="74" selection-start-line="75" selection-start-column="74" selection-end-line="75" selection-end-column="74" />
+        <state relative-caret-position="204">
+          <caret line="47" column="52" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#sortByPriceAsc#0;class#OrderController#0" />
@@ -1076,6 +1056,50 @@
             <element signature="e#5757#5758#0" expanded="true" />
             <element signature="e#5848#5849#0" expanded="true" />
             <element signature="e#5916#5917#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/AuthTerminalService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/repository/OrderRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getOrdersByFloristAndTerminal#0;class#OrderServiceImpl#0" />
+            <element signature="method#getOrdersByFloristAndTerminalByIdAsc#0;class#OrderServiceImpl#0" />
+            <element signature="method#getOrderById#0;class#OrderServiceImpl#0" />
+            <element signature="method#getOrdersByTime#0;class#OrderServiceImpl#0" />
+            <element signature="method#getOrdersByCustomer#0;class#OrderServiceImpl#0" />
+            <element signature="method#getOrdersByAddress#0;class#OrderServiceImpl#0" />
+            <element signature="method#getOrdersByPrice#0;class#OrderServiceImpl#0" />
           </folding>
         </state>
       </provider>

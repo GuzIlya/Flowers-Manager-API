@@ -45,7 +45,7 @@ public class OrderController {
     }
 
     @GetMapping("/getOrderById")
-    public ResponseEntity<OrderDto> findById(@RequestParam("value") Long id, HttpServletRequest request) throws JwtValidationException{
+    public ResponseEntity<List<OrderDto>> findById(@RequestParam("value") Long id, HttpServletRequest request) throws JwtValidationException{
         Jws<Claims> claims = authTerminalService.authorization(request.getHeader(authHeaderName));
 
         return ResponseEntity.ok(orderService.getOrderById(claims, id));

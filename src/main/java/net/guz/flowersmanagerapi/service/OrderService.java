@@ -12,7 +12,7 @@ import java.util.List;
 public interface OrderService {
     List<Order> getOrdersByFloristAndTerminal(Jws<Claims> claims);
     List<OrderDto> getOrdersByFloristAndTerminalByIdAsc(Jws<Claims> claims);
-    OrderDto getOrderById(Jws<Claims> claims, Long id);
+    List<OrderDto> getOrderById(Jws<Claims> claims, Long id);
     List<OrderDto> getOrdersByDate(Jws<Claims> claims, String date);
     List<OrderDto> getOrdersByTime(Jws<Claims> claims, String time);
     List<OrderDto> getOrdersByCustomer(Jws<Claims> claims, String customer);
