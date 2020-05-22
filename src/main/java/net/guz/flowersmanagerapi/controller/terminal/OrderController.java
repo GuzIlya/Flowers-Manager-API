@@ -82,7 +82,7 @@ public class OrderController {
         Jws<Claims> claims = authTerminalService.authorization(request.getHeader(authHeaderName));
 
         List<Order> orders = orderService.getOrdersByFloristAndTerminal(claims);
-        Collections.sort(orders, Comparator.comparing(Order::getPrice).reversed());
+        Collections.sort(orders, Comparator.comparing(Order::getPrice));
 
         return ResponseEntity.ok(OrderDto.from(orders));
     }
@@ -92,7 +92,7 @@ public class OrderController {
         Jws<Claims> claims = authTerminalService.authorization(request.getHeader(authHeaderName));
 
         List<Order> orders = orderService.getOrdersByFloristAndTerminal(claims);
-        Collections.sort(orders, Comparator.comparing(Order::getPrice));
+        Collections.sort(orders, Comparator.comparing(Order::getPrice).reversed());
 
         return ResponseEntity.ok(OrderDto.from(orders));
     }
@@ -102,7 +102,7 @@ public class OrderController {
         Jws<Claims> claims = authTerminalService.authorization(request.getHeader(authHeaderName));
 
         List<Order> orders = orderService.getOrdersByFloristAndTerminal(claims);
-        Collections.sort(orders, Comparator.comparing(Order::getDate).thenComparing(Order::getTime));
+        Collections.sort(orders, Comparator.comparing(Order::getDate).reversed().thenComparing(Order::getTime).reversed());
 
         return ResponseEntity.ok(OrderDto.from(orders));
     }
@@ -112,7 +112,7 @@ public class OrderController {
         Jws<Claims> claims = authTerminalService.authorization(request.getHeader(authHeaderName));
 
         List<Order> orders = orderService.getOrdersByFloristAndTerminal(claims);
-        Collections.sort(orders, Comparator.comparing(Order::getDate).reversed().thenComparing(Order::getTime).reversed());
+        Collections.sort(orders, Comparator.comparing(Order::getDate).thenComparing(Order::getTime));
 
         return ResponseEntity.ok(OrderDto.from(orders));
     }
