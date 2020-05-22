@@ -8,10 +8,8 @@ import lombok.NoArgsConstructor;
 import net.guz.flowersmanagerapi.entity.BaseEntity;
 import net.guz.flowersmanagerapi.entity.Shop;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -27,5 +25,9 @@ public class Terminal extends BaseEntity {
     private String password;
 
     @ManyToOne(optional = false)
+    @JoinColumn(name = "shop_id")
     private Shop shop;
+
+    @OneToMany(mappedBy = "terminal", fetch = FetchType.EAGER)
+    private List<Order> orders;
 }

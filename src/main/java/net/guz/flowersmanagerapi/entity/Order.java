@@ -5,10 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-
+import javax.persistence.*;
 
 
 @Data
@@ -32,4 +29,12 @@ public class Order extends BaseEntity {
 
     @Column(name = "price")
     private String price;
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "florist_id")
+    private Florist florist;
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "terminal_id")
+    private Terminal terminal;
 }

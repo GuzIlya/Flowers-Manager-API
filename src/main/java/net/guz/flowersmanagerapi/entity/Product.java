@@ -4,24 +4,23 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import net.guz.flowersmanagerapi.entity.BaseEntity;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Builder
-@Table(name = "florists")
-public class Florist extends BaseEntity {
+@Table(name = "products")
+public class Product extends BaseEntity {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "password")
-    private String password;
+    @Column(name = "price")
+    private Long price;
 
-    @OneToMany(mappedBy = "florist", fetch = FetchType.EAGER)
-    private List<Order> orders;
+    @ManyToOne()
+    @JoinColumn(name = "category_id")
+    private Category category;
 }

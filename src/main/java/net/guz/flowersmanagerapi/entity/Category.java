@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import net.guz.flowersmanagerapi.entity.BaseEntity;
 
 import javax.persistence.*;
 import java.util.List;
@@ -14,14 +13,11 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Builder
-@Table(name = "florists")
-public class Florist extends BaseEntity {
+@Table(name = "categories")
+public class Category extends BaseEntity {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "password")
-    private String password;
-
-    @OneToMany(mappedBy = "florist", fetch = FetchType.EAGER)
-    private List<Order> orders;
+    @OneToMany(mappedBy = "category", fetch = FetchType.EAGER)
+    private List<Product> products;
 }
