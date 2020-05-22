@@ -3,9 +3,7 @@ package net.guz.flowersmanagerapi.controller.terminal;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.swagger.annotations.Api;
-import net.guz.flowersmanagerapi.dto.OrderDto;
-import net.guz.flowersmanagerapi.dto.SearchDto;
-import net.guz.flowersmanagerapi.dto.SortDto;
+import net.guz.flowersmanagerapi.dto.*;
 import net.guz.flowersmanagerapi.entity.Order;
 import net.guz.flowersmanagerapi.security.awt.exception.JwtValidationException;
 import net.guz.flowersmanagerapi.service.AuthTerminalService;
@@ -129,5 +127,17 @@ public class OrderController {
         return ResponseEntity.ok(orderService.getSearches());
     }
 
+    @GetMapping("/getCategories")
+    public ResponseEntity<List<CategoryDto>> getCategories(HttpServletRequest request) throws JwtValidationException{
+        Jws<Claims> claims = authTerminalService.authorization(request.getHeader(authHeaderName));
 
+        return ResponseEntity.ok(orderService.getCategories(claims));
+    }
+
+    @GetMapping("/getProducts")
+    public ResponseEntity<List<ProductDto>> getProducts(@RequestParam("value") Long categoryId, HttpServletRequest request) throws JwtValidationException{
+        Jws<Claims> claims = authTerminalService.authorization(request.getHeader(authHeaderName));
+
+        return ResponseEntity.ok(orderService.getProducts(claims, categoryId));
+    }
 }

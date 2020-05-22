@@ -2,9 +2,7 @@ package net.guz.flowersmanagerapi.service;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
-import net.guz.flowersmanagerapi.dto.OrderDto;
-import net.guz.flowersmanagerapi.dto.SearchDto;
-import net.guz.flowersmanagerapi.dto.SortDto;
+import net.guz.flowersmanagerapi.dto.*;
 import net.guz.flowersmanagerapi.entity.Order;
 
 import java.util.List;
@@ -20,4 +18,6 @@ public interface OrderService {
     List<OrderDto> getOrdersByPrice(Jws<Claims> claims, String price);
     List<SortDto> getSorts();
     List<SearchDto> getSearches();
+    List<CategoryDto> getCategories(Jws<Claims> claims);
+    List<ProductDto> getProducts(Jws<Claims> claims, Long categoryId);
 }

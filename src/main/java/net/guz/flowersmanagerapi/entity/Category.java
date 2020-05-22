@@ -20,4 +20,8 @@ public class Category extends BaseEntity {
 
     @OneToMany(mappedBy = "category", fetch = FetchType.EAGER)
     private List<Product> products;
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "shop_id")
+    private Shop shop;
 }

@@ -20,7 +20,12 @@ public class Product extends BaseEntity {
     @Column(name = "price")
     private Long price;
 
-    @ManyToOne()
+    @ManyToOne(optional = false)
     @JoinColumn(name = "category_id")
     private Category category;
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "shop_id")
+    private Shop shop;
+
 }

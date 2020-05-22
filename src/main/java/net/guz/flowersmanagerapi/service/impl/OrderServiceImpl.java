@@ -2,9 +2,7 @@ package net.guz.flowersmanagerapi.service.impl;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
-import net.guz.flowersmanagerapi.dto.OrderDto;
-import net.guz.flowersmanagerapi.dto.SearchDto;
-import net.guz.flowersmanagerapi.dto.SortDto;
+import net.guz.flowersmanagerapi.dto.*;
 import net.guz.flowersmanagerapi.entity.Florist;
 import net.guz.flowersmanagerapi.entity.Order;
 import net.guz.flowersmanagerapi.entity.Terminal;
@@ -32,6 +30,12 @@ public class OrderServiceImpl implements OrderService {
 
     @Autowired
     private SortRepository sortRepository;
+
+    @Autowired
+    private CategoryRepository categoryRepository;
+
+    @Autowired
+    private ProductRepository productRepository;
 
     @Override
     public List<Order> getOrdersByFloristAndTerminal(Jws<Claims> claims) {
@@ -133,5 +137,19 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public List<SearchDto> getSearches() {
         return SearchDto.from(searchRepository.findAll());
+    }
+
+    @Override
+    public List<CategoryDto> getCategories(Jws<Claims> claims) {
+        Optional<Terminal> terminalCandidate = terminalRepository.findById(Long.parseLong(claims.getBody().get("terminal_id").toString()));
+
+        return CategoryDto.from(categoryRepository.findAllByShop(terminalCandidate.get().getShop()));
+    }
+
+    @Override
+    public List<ProductDto> getProducts(Jws<Claims> claims, Long categoryId ) {
+        Optional<Terminal> terminalCandidate = terminalRepository.findById(Long.parseLong(claims.getBody().get("terminal_id").toString()));
+
+        return ProductDto.from(productRepository.findAllByShopAndCategory(terminalCandidate.get().getShop(), categoryRepository.getOne(categoryId)));
     }
 }
