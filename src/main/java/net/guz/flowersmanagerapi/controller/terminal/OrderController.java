@@ -45,35 +45,35 @@ public class OrderController {
     }
 
     @GetMapping("/getOrderById")
-    public ResponseEntity<OrderDto> findById(@RequestParam("id") Long id, HttpServletRequest request) throws JwtValidationException{
+    public ResponseEntity<OrderDto> findById(@RequestParam("value") Long id, HttpServletRequest request) throws JwtValidationException{
         Jws<Claims> claims = authTerminalService.authorization(request.getHeader(authHeaderName));
 
         return ResponseEntity.ok(orderService.getOrderById(claims, id));
     }
 
     @GetMapping("/findByDate")
-    public ResponseEntity<List<OrderDto>> findByDate(@RequestParam("date") String date, HttpServletRequest request) throws JwtValidationException{
+    public ResponseEntity<List<OrderDto>> findByDate(@RequestParam("value") String date, HttpServletRequest request) throws JwtValidationException{
         Jws<Claims> claims = authTerminalService.authorization(request.getHeader(authHeaderName));
 
         return ResponseEntity.ok(orderService.getOrdersByDate(claims, date));
     }
 
     @GetMapping("/findByTime")
-    public ResponseEntity<List<OrderDto>> findByTime(@RequestParam("time") String time, HttpServletRequest request) throws JwtValidationException{
+    public ResponseEntity<List<OrderDto>> findByTime(@RequestParam("value") String time, HttpServletRequest request) throws JwtValidationException{
         Jws<Claims> claims = authTerminalService.authorization(request.getHeader(authHeaderName));
 
         return ResponseEntity.ok(orderService.getOrdersByTime(claims, time));
     }
 
     @GetMapping("/findByCustomer")
-    public ResponseEntity<List<OrderDto>> findByCustomer(@RequestParam("customer") String customer, HttpServletRequest request) throws JwtValidationException{
+    public ResponseEntity<List<OrderDto>> findByCustomer(@RequestParam("value") String customer, HttpServletRequest request) throws JwtValidationException{
         Jws<Claims> claims = authTerminalService.authorization(request.getHeader(authHeaderName));
 
         return ResponseEntity.ok(orderService.getOrdersByCustomer(claims, customer));
     }
 
     @GetMapping("/findByPrice")
-    public ResponseEntity<List<OrderDto>> findByPrice(@RequestParam("price") String price, HttpServletRequest request) throws JwtValidationException{
+    public ResponseEntity<List<OrderDto>> findByPrice(@RequestParam("value") String price, HttpServletRequest request) throws JwtValidationException{
         Jws<Claims> claims = authTerminalService.authorization(request.getHeader(authHeaderName));
 
         return ResponseEntity.ok(orderService.getOrdersByPrice(claims, price));
