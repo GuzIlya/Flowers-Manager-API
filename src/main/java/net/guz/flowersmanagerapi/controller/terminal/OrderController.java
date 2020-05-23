@@ -23,7 +23,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/api/terminal/")
-@Api(value = "Terminal", description = "Запросы для терминала")
+@Api(value = "Order", description = "Запросы для терминала")
 public class OrderController {
 
     @Value("${jwt.token.terminal.headername}")
