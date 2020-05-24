@@ -30,4 +30,8 @@ public class Shop extends BaseEntity {
     @OneToMany(mappedBy = "shop", fetch = FetchType.EAGER)
     @Fetch(value = FetchMode.SUBSELECT)
     private List<Product> products;
+
+    @ManyToOne()
+    @JoinColumn(name = "owner_id")
+    private Owner owner;
 }

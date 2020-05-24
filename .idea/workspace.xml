@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="293d2f7c-83a5-41b1-8726-3cff67922a66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/controller/terminal/TerminalController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/dto/FloristDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/TerminalService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/impl/TerminalServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1b40f4b8-dd77-4131-a16d-5bfaa8141c21.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1b40f4b8-dd77-4131-a16d-5bfaa8141c21.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1b40f4b8-dd77-4131-a16d-5bfaa8141c21/storage_v2/_src_/database/d842t92quh5i02.v8ilMQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1b40f4b8-dd77-4131-a16d-5bfaa8141c21/storage_v2/_src_/database/d842t92quh5i02.v8ilMQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/controller/terminal/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/controller/terminal/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Check.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Check.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/guz/flowersmanagerapi/controller/terminal/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/guz/flowersmanagerapi/controller/terminal/OrderController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -75,29 +76,30 @@
     <session id="383221476">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.117" value="1" />
           <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.65" value="1" />
           <entry key="project.open.time.7" value="3" />
           <entry key="project.open.time.70" value="1" />
           <entry key="project.open.time.82" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cell" value="813" />
-          <entry key="java" value="2851" />
+          <entry key="java" value="3115" />
           <entry key="properties" value="19" />
           <entry key="sql" value="65" />
-          <entry key="txt" value="301" />
+          <entry key="txt" value="334" />
           <entry key="xml" value="65" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2851" />
-          <entry key="PLAIN_TEXT" value="301" />
+          <entry key="JAVA" value="3115" />
+          <entry key="PLAIN_TEXT" value="334" />
           <entry key="Properties" value="19" />
           <entry key="Scratch" value="878" />
           <entry key="XML" value="65" />
@@ -105,18 +107,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="categories" value="7" />
+          <entry key="categories" value="9" />
+          <entry key="checks" value="1" />
           <entry key="class" value="5" />
           <entry key="florists" value="13" />
           <entry key="florists_id_seq" value="1" />
-          <entry key="java" value="171" />
-          <entry key="orders" value="11" />
+          <entry key="java" value="188" />
+          <entry key="orders" value="12" />
           <entry key="products" value="6" />
           <entry key="properties" value="6" />
+          <entry key="purchases" value="1" />
           <entry key="searches" value="5" />
-          <entry key="shops" value="9" />
-          <entry key="sorts" value="5" />
+          <entry key="shops" value="10" />
+          <entry key="sorts" value="6" />
           <entry key="sql" value="5" />
+          <entry key="stocks" value="1" />
+          <entry key="storages" value="1" />
           <entry key="terminals" value="10" />
           <entry key="txt" value="1" />
           <entry key="xml" value="1" />
@@ -125,13 +131,13 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="5" />
-          <entry key="Database Element" value="64" />
-          <entry key="JAVA" value="171" />
+          <entry key="Database Element" value="71" />
+          <entry key="JAVA" value="188" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="6" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="4" />
-          <entry key="UML" value="2" />
+          <entry key="UML" value="4" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -140,29 +146,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/controller/terminal/OrderController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Owner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="31" selection-start-line="31" selection-end-line="32" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getOrders#0;class#OrderController#0" />
-                <element signature="method#findById#0;class#OrderController#0" />
-                <element signature="method#findByDate#0;class#OrderController#0" />
-                <element signature="method#findByCustomer#0;class#OrderController#0" />
-                <element signature="method#findByPrice#0;class#OrderController#0" />
-                <element signature="method#getCategories#0;class#OrderController#0" />
-                <element signature="method#getProducts#0;class#OrderController#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/impl/TerminalServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="306">
+              <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -171,10 +158,152 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/controller/terminal/TerminalController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Shop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="36" column="64" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
+            <state relative-caret-position="391">
+              <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://1b40f4b8-dd77-4131-a16d-5bfaa8141c21/database/d842t92quh5i02/schema/public/table/shops">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Order.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://1b40f4b8-dd77-4131-a16d-5bfaa8141c21/database/d842t92quh5i02/schema/public/table/orders">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="uml://DATABASE/1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.categories">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>DATABASE</ID>
+              <OriginalElement>1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.categories</OriginalElement>
+              <nodes>
+                <node x="566.0705128205128" y="457.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.storages</node>
+                <node x="506.9038461538462" y="812.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.stocks</node>
+                <node x="777.0705128205128" y="0.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.searches</node>
+                <node x="342.3525641025641" y="0.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.shops</node>
+                <node x="0.0" y="446.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.florists</node>
+                <node x="388.0705128205128" y="424.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.products</node>
+                <node x="210.07051282051282" y="457.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.checks</node>
+                <node x="980.0705128205127" y="0.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.sorts</node>
+                <node x="343.3205128205128" y="201.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.categories</node>
+                <node x="304.474358974359" y="812.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.purchases</node>
+                <node x="97.5" y="190.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.terminals</node>
+                <node x="61.224358974359006" y="680.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.orders</node>
+                <node x="558.0705128205128" y="201.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.owners</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.purchases" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.products">
+                  <point x="39.5" y="-92.0" />
+                  <point x="422.974358974359" y="655.0" />
+                  <point x="427.5705128205128" y="655.0" />
+                  <point x="-39.5" y="103.0" />
+                </edge>
+                <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.orders" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.checks">
+                  <point x="74.0" y="-224.0" />
+                  <point x="246.224358974359" y="655.0" />
+                  <point x="249.57051282051282" y="655.0" />
+                  <point x="-39.5" y="70.0" />
+                </edge>
+                <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.stocks" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.storages">
+                  <point x="39.5" y="-92.0" />
+                  <point x="625.4038461538462" y="655.0" />
+                  <point x="645.0705128205128" y="655.0" />
+                  <point x="0.0" y="70.0" />
+                </edge>
+                <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.stocks" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.products">
+                  <point x="-39.5" y="-92.0" />
+                  <point x="546.4038461538462" y="655.0" />
+                  <point x="506.5705128205128" y="655.0" />
+                  <point x="39.5" y="103.0" />
+                </edge>
+                <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.orders" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.terminals">
+                  <point x="0.0" y="-224.0" />
+                  <point x="172.224358974359" y="655.0" />
+                  <point x="184.50000000000003" y="655.0" />
+                  <point x="0.0" y="92.0" />
+                </edge>
+                <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.purchases" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.checks">
+                  <point x="-39.5" y="-92.0" />
+                  <point x="343.974358974359" y="655.0" />
+                  <point x="328.5705128205128" y="655.0" />
+                  <point x="39.5" y="70.0" />
+                </edge>
+                <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.products" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.categories">
+                  <point x="-39.5" y="-103.0" />
+                  <point x="427.5705128205128" y="399.0" />
+                  <point x="422.3205128205128" y="399.0" />
+                  <point x="0.0" y="81.0" />
+                </edge>
+                <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.products" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.shops">
+                  <point x="39.5" y="-103.0" />
+                  <point x="506.5705128205128" y="399.0" />
+                  <point x="511.8205128205128" y="399.0" />
+                  <point x="511.8205128205128" y="165.0" />
+                  <point x="474.0192307692307" y="165.0" />
+                  <point x="52.66666666666663" y="70.0" />
+                </edge>
+                <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.orders" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.florists">
+                  <point x="-74.0" y="-224.0" />
+                  <point x="98.224358974359" y="655.0" />
+                  <point x="87.0" y="655.0" />
+                  <point x="0.0" y="81.0" />
+                </edge>
+                <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.terminals" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.shops">
+                  <point x="0.0" y="-92.0" />
+                  <point x="184.5" y="165.0" />
+                  <point x="368.68589743589746" y="165.0" />
+                  <point x="-52.666666666666686" y="70.0" />
+                </edge>
+                <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.categories" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.shops">
+                  <point x="0.0" y="-81.0" />
+                  <point x="0.0" y="70.0" />
+                </edge>
+                <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.storages" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.owners">
+                  <point x="0.0" y="-70.0" />
+                  <point x="0.0" y="81.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.8675958188153311" x="375.62650602409633" y="256.62650602409633" />
+              <SelectedNodes>
+                <node>1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.owners</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Key columns</Category>
+                <Category>Columns</Category>
+              </Categories>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Purchase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,73 +312,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/OrderService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Check.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            <state relative-caret-position="425">
+              <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/TerminalService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/repository/TerminalRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/impl/AuthTerminalServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/controller/terminal/auth/TerminalAuthController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="32" selection-start-line="32" selection-end-line="33" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/dto/FloristDto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/dto/TerminalTokenDto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -283,7 +352,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Florist.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Terminal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Order.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/dto/OrderDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Searches.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Sorts.java" />
@@ -293,7 +361,6 @@
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/dto/SortDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/repository/OrderRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Category.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Shop.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Product.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/dto/CategoryDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/dto/ProductDto.java" />
@@ -301,13 +368,19 @@
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/OrderService.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/repository/ProductRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/impl/OrderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Check.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/controller/terminal/OrderController.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/dto/FloristDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/impl/AuthTerminalServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/impl/TerminalServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/TerminalService.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/controller/terminal/TerminalController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Purchase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Check.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Owner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Shop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Stock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Storage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Order.java" />
       </list>
     </option>
   </component>
@@ -326,7 +399,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
-    <option name="width" value="979" />
+    <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -335,6 +408,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -460,7 +534,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -471,7 +544,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590265460317" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590282869984" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -542,7 +615,8 @@
       <workItem from="1590152885221" duration="16203000" />
       <workItem from="1590179440294" duration="601000" />
       <workItem from="1590183778038" duration="3273000" />
-      <workItem from="1590264196755" duration="1168000" />
+      <workItem from="1590264196755" duration="1802000" />
+      <workItem from="1590280190708" duration="2527000" />
     </task>
     <task id="LOCAL-00001" summary="added order entity">
       <created>1590084526774</created>
@@ -656,17 +730,24 @@
       <option name="project" value="LOCAL" />
       <updated>1590187480605</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added endpoint for florist data">
+      <created>1590265492400</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1590265492400</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43063000" />
+    <option name="totallyTimeSpent" value="46224000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27114093" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2751678" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -676,7 +757,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -701,6 +782,42 @@
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Bean Validation" order="10" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2751678" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Image Layers" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32907802" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32907802" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="SciView" order="6" />
+      <window_info active="true" anchor="right" id="Database" order="7" visible="true" weight="0.18724832" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -720,7 +837,8 @@
     <MESSAGE value="changed return value" />
     <MESSAGE value="added categories and products" />
     <MESSAGE value="changed asc and desc" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed asc and desc" />
+    <MESSAGE value="added endpoint for florist data" />
+    <option name="LAST_COMMIT_MESSAGE" value="added endpoint for florist data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -741,63 +859,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/form/terminal/TerminalForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.2.4.RELEASE/spring-data-commons-2.2.4.RELEASE.jar!/org/springframework/data/domain/Sort.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459">
-          <caret line="35" column="36" lean-forward="true" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Status.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/repository/SerachesRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/repository/SortRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Search.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Sort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/dto/SearchDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="17" selection-start-line="17" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/AuthTerminalService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -823,13 +884,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Shop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -882,13 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://1b40f4b8-dd77-4131-a16d-5bfaa8141c21/database/d842t92quh5i02/schema/public/table/shops">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/BaseEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -896,89 +943,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.categories">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.categories</OriginalElement>
-          <nodes>
-            <node x="" y="">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.searches</node>
-            <node x="" y="">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.products</node>
-            <node x="" y="">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.shops</node>
-            <node x="" y="">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.sorts</node>
-            <node x="" y="">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.categories</node>
-            <node x="" y="">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.florists</node>
-            <node x="" y="">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.terminals</node>
-            <node x="" y="">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.orders</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.7085590465872156" x="397.0" y="425.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://1b40f4b8-dd77-4131-a16d-5bfaa8141c21/database/d842t92quh5i02/schema/public/table/orders">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://1b40f4b8-dd77-4131-a16d-5bfaa8141c21/database/d842t92quh5i02/schema/public/table/searches">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://1b40f4b8-dd77-4131-a16d-5bfaa8141c21/database/d842t92quh5i02/schema/public/table/sorts">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Check.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Florist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1021,16 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1496">
           <caret line="151" selection-start-line="151" selection-end-line="151" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getOrdersByFloristAndTerminal#0;class#OrderServiceImpl#0" />
-            <element signature="method#getOrdersByFloristAndTerminalByIdAsc#0;class#OrderServiceImpl#0" />
-            <element signature="method#getOrderById#0;class#OrderServiceImpl#0" />
-            <element signature="method#getOrdersByDate#0;class#OrderServiceImpl#0" />
-            <element signature="method#getOrdersByTime#0;class#OrderServiceImpl#0" />
-            <element signature="method#getOrdersByCustomer#0;class#OrderServiceImpl#0" />
-            <element signature="method#getOrdersByPrice#0;class#OrderServiceImpl#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1062,60 +1020,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/dto/FloristDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/impl/AuthTerminalServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/repository/TerminalRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/TerminalService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/impl/TerminalServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/controller/terminal/auth/TerminalAuthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="32" selection-start-line="32" selection-end-line="33" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/controller/terminal/OrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
+        <state relative-caret-position="204">
           <caret line="31" selection-start-line="31" selection-end-line="32" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1130,10 +1037,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/impl/TerminalServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/OrderService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="102">
           <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/repository/TerminalRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/impl/AuthTerminalServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/controller/terminal/auth/TerminalAuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="32" selection-start-line="32" selection-end-line="33" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/dto/FloristDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1142,11 +1090,266 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/controller/terminal/TerminalController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="36" column="64" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
+        <state relative-caret-position="371">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/service/TerminalService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Search.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" selection-start-line="18" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1b40f4b8-dd77-4131-a16d-5bfaa8141c21/database/d842t92quh5i02/schema/public/table/purchases">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1b40f4b8-dd77-4131-a16d-5bfaa8141c21/database/d842t92quh5i02/schema/public/table/checks">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Florist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" selection-start-line="18" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1b40f4b8-dd77-4131-a16d-5bfaa8141c21/database/d842t92quh5i02/schema/public/table/storages">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1b40f4b8-dd77-4131-a16d-5bfaa8141c21/database/d842t92quh5i02/schema/public/table/stocks">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1b40f4b8-dd77-4131-a16d-5bfaa8141c21/database/d842t92quh5i02/schema/public/table/sorts">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Stock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Storage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Purchase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Check.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1b40f4b8-dd77-4131-a16d-5bfaa8141c21/database/d842t92quh5i02/schema/public/table/orders">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.categories">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.categories</OriginalElement>
+          <nodes>
+            <node x="566.0705128205128" y="457.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.storages</node>
+            <node x="506.9038461538462" y="812.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.stocks</node>
+            <node x="777.0705128205128" y="0.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.searches</node>
+            <node x="342.3525641025641" y="0.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.shops</node>
+            <node x="0.0" y="446.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.florists</node>
+            <node x="388.0705128205128" y="424.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.products</node>
+            <node x="210.07051282051282" y="457.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.checks</node>
+            <node x="980.0705128205127" y="0.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.sorts</node>
+            <node x="343.3205128205128" y="201.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.categories</node>
+            <node x="304.474358974359" y="812.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.purchases</node>
+            <node x="97.5" y="190.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.terminals</node>
+            <node x="61.224358974359006" y="680.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.orders</node>
+            <node x="558.0705128205128" y="201.0">1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.owners</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.purchases" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.products">
+              <point x="39.5" y="-92.0" />
+              <point x="422.974358974359" y="655.0" />
+              <point x="427.5705128205128" y="655.0" />
+              <point x="-39.5" y="103.0" />
+            </edge>
+            <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.orders" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.checks">
+              <point x="74.0" y="-224.0" />
+              <point x="246.224358974359" y="655.0" />
+              <point x="249.57051282051282" y="655.0" />
+              <point x="-39.5" y="70.0" />
+            </edge>
+            <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.stocks" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.storages">
+              <point x="39.5" y="-92.0" />
+              <point x="625.4038461538462" y="655.0" />
+              <point x="645.0705128205128" y="655.0" />
+              <point x="0.0" y="70.0" />
+            </edge>
+            <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.stocks" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.products">
+              <point x="-39.5" y="-92.0" />
+              <point x="546.4038461538462" y="655.0" />
+              <point x="506.5705128205128" y="655.0" />
+              <point x="39.5" y="103.0" />
+            </edge>
+            <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.orders" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.terminals">
+              <point x="0.0" y="-224.0" />
+              <point x="172.224358974359" y="655.0" />
+              <point x="184.50000000000003" y="655.0" />
+              <point x="0.0" y="92.0" />
+            </edge>
+            <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.purchases" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.checks">
+              <point x="-39.5" y="-92.0" />
+              <point x="343.974358974359" y="655.0" />
+              <point x="328.5705128205128" y="655.0" />
+              <point x="39.5" y="70.0" />
+            </edge>
+            <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.products" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.categories">
+              <point x="-39.5" y="-103.0" />
+              <point x="427.5705128205128" y="399.0" />
+              <point x="422.3205128205128" y="399.0" />
+              <point x="0.0" y="81.0" />
+            </edge>
+            <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.products" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.shops">
+              <point x="39.5" y="-103.0" />
+              <point x="506.5705128205128" y="399.0" />
+              <point x="511.8205128205128" y="399.0" />
+              <point x="511.8205128205128" y="165.0" />
+              <point x="474.0192307692307" y="165.0" />
+              <point x="52.66666666666663" y="70.0" />
+            </edge>
+            <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.orders" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.florists">
+              <point x="-74.0" y="-224.0" />
+              <point x="98.224358974359" y="655.0" />
+              <point x="87.0" y="655.0" />
+              <point x="0.0" y="81.0" />
+            </edge>
+            <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.terminals" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.shops">
+              <point x="0.0" y="-92.0" />
+              <point x="184.5" y="165.0" />
+              <point x="368.68589743589746" y="165.0" />
+              <point x="-52.666666666666686" y="70.0" />
+            </edge>
+            <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.categories" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.shops">
+              <point x="0.0" y="-81.0" />
+              <point x="0.0" y="70.0" />
+            </edge>
+            <edge source="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.storages" target="1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.owners">
+              <point x="0.0" y="-70.0" />
+              <point x="0.0" y="81.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.8675958188153311" x="375.62650602409633" y="256.62650602409633" />
+          <SelectedNodes>
+            <node>1b40f4b8-dd77-4131-a16d-5bfaa8141c21.TABLE:d842t92quh5i02.public.owners</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Owner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1b40f4b8-dd77-4131-a16d-5bfaa8141c21/database/d842t92quh5i02/schema/public/table/shops">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/guz/flowersmanagerapi/entity/Shop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
         </state>
       </provider>
     </entry>
