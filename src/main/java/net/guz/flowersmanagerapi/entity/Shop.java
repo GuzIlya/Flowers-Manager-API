@@ -31,7 +31,7 @@ public class Shop extends BaseEntity {
     @Fetch(value = FetchMode.SUBSELECT)
     private List<Product> products;
 
-    @ManyToOne()
+    @ManyToOne( )
     @JoinColumn(name = "owner_id")
     private Owner owner;
 }

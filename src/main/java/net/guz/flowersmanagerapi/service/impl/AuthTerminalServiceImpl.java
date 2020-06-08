@@ -19,7 +19,7 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
-public class AuthTerminalServiceImpl implements AuthTerminalService {
+    public class AuthTerminalServiceImpl implements AuthTerminalService {
 
     @Autowired
     private FloristRepository floristRepository;

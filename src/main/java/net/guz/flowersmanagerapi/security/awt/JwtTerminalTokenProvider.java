@@ -21,26 +21,26 @@ public class JwtTerminalTokenProvider {
     @Value("${jwt.token.terminal.expired}")
     private long validityInMilliseconds;
 
-    public String resolveToken(String bearerToken) {
-        if (bearerToken != null && bearerToken.startsWith("Bearer ")) {
-            log.info("IN resolveToken - token: {}", bearerToken.substring(7));
-            return bearerToken.substring(7);
-        } throw new IllegalArgumentException("Token not found");
-    }
+public String resolveToken(String bearerToken) {
+    if (bearerToken != null && bearerToken.startsWith("Bearer ")) {
+        log.info("IN resolveToken - token: {}", bearerToken.substring(7));
+        return bearerToken.substring(7);
+    } throw new IllegalArgumentException("Token not found");
+}
 
-    public boolean validateToken(String token) throws JwtValidationException {
-        try {
-            Jws<Claims> claims = Jwts.parser().setSigningKey(secret).parseClaimsJws(token);
+public boolean validateToken(String token) throws JwtValidationException {
+    try {
+        Jws<Claims> claims = Jwts.parser().setSigningKey(secret).parseClaimsJws(token);
 
-            if (claims.getBody().getExpiration().before(new Date())) {
-                throw new JwtValidationException("Token expired");
-            }
-
-            return true;
-        } catch (JwtException | IllegalArgumentException e) {
-            throw new JwtAuthenticationException("JWT token is expired or invalid");
+        if (claims.getBody().getExpiration().before(new Date())) {
+            throw new JwtValidationException("Token expired");
         }
+
+        return true;
+    } catch (JwtException | IllegalArgumentException e) {
+        throw new JwtAuthenticationException("JWT token is expired or invalid");
     }
+}
 
     public Jws<Claims> getClaims(String token){
         Jws<Claims> claims = Jwts.parser().setSigningKey(secret).parseClaimsJws(token);

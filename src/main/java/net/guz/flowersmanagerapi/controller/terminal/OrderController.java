@@ -77,7 +77,7 @@ public class OrderController {
         return ResponseEntity.ok(orderService.getOrdersByPrice(claims, price));
     }
 
-    @GetMapping("/sortByPriceDesc")
+    @GetMapping("/sortByPriceAsc")
     public ResponseEntity<List<OrderDto>> sortByPriceDesc(HttpServletRequest request) throws JwtValidationException{
         Jws<Claims> claims = authTerminalService.authorization(request.getHeader(authHeaderName));
 
@@ -87,7 +87,7 @@ public class OrderController {
         return ResponseEntity.ok(OrderDto.from(orders));
     }
 
-    @GetMapping("/sortByPriceAsc")
+    @GetMapping("/sortByPriceDesc")
     public ResponseEntity<List<OrderDto>> sortByPriceAsc(HttpServletRequest request) throws JwtValidationException{
         Jws<Claims> claims = authTerminalService.authorization(request.getHeader(authHeaderName));
 
@@ -97,7 +97,7 @@ public class OrderController {
         return ResponseEntity.ok(OrderDto.from(orders));
     }
 
-    @GetMapping("/sortByDateAndTimeAsc")
+    @GetMapping("/sortByDateAndTimeDesc")
     public ResponseEntity<List<OrderDto>> sortByDateAndTimeAsc(HttpServletRequest request) throws JwtValidationException{
         Jws<Claims> claims = authTerminalService.authorization(request.getHeader(authHeaderName));
 
@@ -107,7 +107,7 @@ public class OrderController {
         return ResponseEntity.ok(OrderDto.from(orders));
     }
 
-    @GetMapping("/sortByDateAndTimeDesc")
+    @GetMapping("/sortByDateAndTimeAsc")
     public ResponseEntity<List<OrderDto>> sortByDateAndTimeDesc(HttpServletRequest request) throws JwtValidationException{
         Jws<Claims> claims = authTerminalService.authorization(request.getHeader(authHeaderName));
 
