@@ -23,4 +23,5 @@ public interface OrderService {
     List<ProductDto> getProducts(Jws<Claims> claims, Long categoryId);
     void deleteOrder(Jws<Claims> claims, Long id);
     void addOrder(Jws<Claims> claims, OrderForm orderForm);
+    void changeOrder(Jws<Claims> claims, OrderForm orderForm);
 }

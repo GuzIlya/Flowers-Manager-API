@@ -179,4 +179,25 @@ public class OrderServiceImpl implements OrderService {
 
         orderRepository.save(order);
     }
+
+    @Override
+    public void changeOrder(Jws<Claims> claims, OrderForm orderForm) {
+        Optional<Florist> floristCandidate = floristRepository.findById(Long.parseLong(claims.getBody().get("florist_id").toString()));
+        Optional<Terminal> terminalCandidate = terminalRepository.findById(Long.parseLong(claims.getBody().get("terminal_id").toString()));
+
+        Order order = Order.builder()
+                .date(orderForm.getDate())
+                .time(orderForm.getTime())
+                .customer(orderForm.getCustomer())
+                .address(orderForm.getAddress())
+                .build();
+
+        order.setId(orderForm.getId());
+        order.setFlorist(floristCandidate.get());
+        order.setTerminal(terminalCandidate.get());
+
+        if (orderRepository.findById(order.getId()).isPresent()){
+            orderRepository.save(order);
+        } else throw new IllegalArgumentException("No such order");
+    }
 }

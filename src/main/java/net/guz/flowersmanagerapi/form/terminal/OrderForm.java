@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class OrderForm {
+    private Long id;
     private String date;
     private String time;
     private String address;

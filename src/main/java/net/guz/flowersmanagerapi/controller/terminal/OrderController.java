@@ -40,6 +40,13 @@ public class OrderController {
         return ResponseEntity.ok().build();
     }
 
+    @PostMapping("/changeOrder")
+    public ResponseEntity<Object> changeOrder(@RequestBody OrderForm orderForm, HttpServletRequest request) throws JwtValidationException{
+        Jws<Claims> claims = authTerminalService.authorization(request.getHeader(authHeaderName));
+        orderService.changeOrder(claims, orderForm);
+        return ResponseEntity.ok().build();
+    }
+
     @DeleteMapping("/deleteOrder")
     public ResponseEntity<Object> deleteOrder(@RequestParam("value") Long id, HttpServletRequest request) throws JwtValidationException {
         Jws<Claims> claims = authTerminalService.authorization(request.getHeader(authHeaderName));
