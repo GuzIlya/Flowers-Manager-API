@@ -18,13 +18,16 @@ public class ProductDto {
 
     private String name;
 
-    private Long price;
+    private String imageUrl;
+
+    private String price;
 
     public static ProductDto from(Product product) {
         return ProductDto.builder()
                 .id(product.getId())
                 .name(product.getName())
                 .price(product.getPrice())
+                .imageUrl(product.getImageUrl())
                 .build();
     }
 

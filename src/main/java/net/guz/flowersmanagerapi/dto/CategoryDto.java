@@ -18,10 +18,13 @@ public class CategoryDto {
 
     private String name;
 
+    private String imageUrl;
+
     public static CategoryDto from(Category category) {
         return CategoryDto.builder()
                 .id(category.getId())
                 .name(category.getName())
+                .imageUrl(category.getImageUrl())
                 .build();
     }
 

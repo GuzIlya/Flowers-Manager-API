@@ -18,7 +18,10 @@ public class Product extends BaseEntity {
     private String name;
 
     @Column(name = "price")
-    private Long price;
+    private String price;
+
+    @Column(name = "imageUrl")
+    private String imageUrl;
 
     @ManyToOne(optional = false)
     @JoinColumn(name = "category_id")

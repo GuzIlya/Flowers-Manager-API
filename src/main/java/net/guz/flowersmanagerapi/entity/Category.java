@@ -18,6 +18,9 @@ public class Category extends BaseEntity {
     @Column(name = "name")
     private String name;
 
+    @Column(name = "imageUrl")
+    private String imageUrl;
+
     @OneToMany(mappedBy = "category", fetch = FetchType.EAGER)
     private List<Product> products;
 
