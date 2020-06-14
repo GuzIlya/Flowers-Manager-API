@@ -5,6 +5,7 @@ import io.jsonwebtoken.Jws;
 import io.swagger.annotations.Api;
 import net.guz.flowersmanagerapi.dto.*;
 import net.guz.flowersmanagerapi.entity.Order;
+import net.guz.flowersmanagerapi.form.terminal.OrderForm;
 import net.guz.flowersmanagerapi.security.awt.exception.JwtValidationException;
 import net.guz.flowersmanagerapi.service.AuthTerminalService;
 import net.guz.flowersmanagerapi.service.OrderService;
@@ -31,6 +32,13 @@ public class OrderController {
 
     @Autowired
     private AuthTerminalService authTerminalService;
+
+    @PostMapping("/addOrder")
+    public ResponseEntity<Object> addOrder(@RequestBody OrderForm orderForm, HttpServletRequest request) throws JwtValidationException{
+        Jws<Claims> claims = authTerminalService.authorization(request.getHeader(authHeaderName));
+        orderService.addOrder(claims, orderForm);
+        return ResponseEntity.ok().build();
+    }
 
     @DeleteMapping("/deleteOrder")
     public ResponseEntity<Object> deleteOrder(@RequestParam("value") Long id, HttpServletRequest request) throws JwtValidationException {
