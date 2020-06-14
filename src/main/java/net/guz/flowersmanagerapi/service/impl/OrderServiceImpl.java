@@ -6,6 +6,7 @@ import net.guz.flowersmanagerapi.dto.*;
 import net.guz.flowersmanagerapi.entity.Florist;
 import net.guz.flowersmanagerapi.entity.Order;
 import net.guz.flowersmanagerapi.entity.Terminal;
+import net.guz.flowersmanagerapi.form.terminal.OrderForm;
 import net.guz.flowersmanagerapi.repository.*;
 import net.guz.flowersmanagerapi.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -151,5 +152,13 @@ public class OrderServiceImpl implements OrderService {
         Optional<Terminal> terminalCandidate = terminalRepository.findById(Long.parseLong(claims.getBody().get("terminal_id").toString()));
 
         return ProductDto.from(productRepository.findAllByShopAndCategory(terminalCandidate.get().getShop(), categoryRepository.getOne(categoryId)));
+    }
+
+    @Override
+    public void deleteOrder(Jws<Claims> claims, Long id) {
+        Optional<Order> actual = orderRepository.findById(id);
+        if(actual.isPresent())
+            orderRepository.delete(actual.get());
+        else throw new IllegalArgumentException("No such order");
     }
 }

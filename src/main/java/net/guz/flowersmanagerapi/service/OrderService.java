@@ -4,6 +4,7 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import net.guz.flowersmanagerapi.dto.*;
 import net.guz.flowersmanagerapi.entity.Order;
+import net.guz.flowersmanagerapi.form.terminal.OrderForm;
 
 import java.util.List;
 
@@ -20,4 +21,5 @@ public interface OrderService {
     List<SearchDto> getSearches();
     List<CategoryDto> getCategories(Jws<Claims> claims);
     List<ProductDto> getProducts(Jws<Claims> claims, Long categoryId);
+    void deleteOrder(Jws<Claims> claims, Long id);
 }

@@ -11,10 +11,7 @@ import net.guz.flowersmanagerapi.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Collections;
@@ -34,6 +31,13 @@ public class OrderController {
 
     @Autowired
     private AuthTerminalService authTerminalService;
+
+    @DeleteMapping("/deleteOrder")
+    public ResponseEntity<Object> deleteOrder(@RequestParam("value") Long id, HttpServletRequest request) throws JwtValidationException {
+        Jws<Claims> claims = authTerminalService.authorization(request.getHeader(authHeaderName));
+        orderService.deleteOrder(claims, id);
+        return ResponseEntity.ok().build();
+    }
 
     @GetMapping("/getOrders")
     public ResponseEntity<List<OrderDto>> getOrders(HttpServletRequest request) throws JwtValidationException {
